@@ -1,5 +1,5 @@
 import express from 'express'
-import pizzasRoutes from '.../src/routes/pizzasRoutes.js'
+import pratosRoutes from '.../src/routes/pratosRoutes.js'
 const app = express()
 const port = 3000
 
@@ -10,10 +10,10 @@ app.get('/', (req, res) => {
 })
 
 app.get('/' , (req,res) =>{
-  res.json("Pizzaria ne")
+  res.json("Sushibar ne")
 })
 
-app.use("/pizzas", pizzasRoutes)
+app.use("/pratos", pratosRoutes)
 
 
 app.listen(port, () => {

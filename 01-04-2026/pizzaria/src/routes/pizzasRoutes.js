@@ -13,7 +13,7 @@ routePizzas.get("/:id", (req,res)=>{
     const pizza = pizzasService.getById(id)
     if(!pizza) {
         return res.status(404).json({ message: "Pizza não encontrada."})
-    } res.json(paciente)
+    } res.json(pizza)
     
 });
 

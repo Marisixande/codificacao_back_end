@@ -21,7 +21,7 @@ class PizzasService {
             id:  pizzas.length > 0 ?  pizzas[ pizzas.length - 1].id + 1 : 1, nome
         }
          pizzas.push(newPizzas)
-        return newPaciente
+        return newPizza
     }
     updatePatch(id, nome) {
         const index =  pizzas.findIndex((f)=>f.id === parseInt(id));
