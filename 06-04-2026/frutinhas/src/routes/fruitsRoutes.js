@@ -26,7 +26,7 @@ routeFrutas.put("/:id", (req, res) => {
         return res.status(404).json({ message: "Dados insuficientes, o campo nome é obrigatorio." })
     }
 
-    const frutaUpdated = frutasService.updatedPut(id, {nome});
+    const frutaUpdated = frutasService.updatePut(id, {nome});
     
     res.json(frutaUpdated)
 
